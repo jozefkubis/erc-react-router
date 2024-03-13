@@ -27,6 +27,8 @@ import PALSrytmus from "./pages/erc/PALS/PALSrytmus";
 import Vyboj from "./pages/erc/PALS/Vyboj";
 import PALSadrenalin from "./pages/erc/PALS/PALSadrenalin";
 import Farmakológia from "./pages/farmakologia/Farmakológia";
+import NLS from "./pages/erc/NLS/NLS";
+import FirstMinute from "./pages/erc/NLS/FirstMinute";
 
 const App = () => {
   return (
@@ -60,6 +62,8 @@ const App = () => {
           <Route path="palsrytmus" element={<PALSrytmus />} />
           <Route path="vyboj" element={<Vyboj />} />
           <Route path="palsadrenalin" element={<PALSadrenalin />} />
+          <Route path="nls" element={<NLS />} />
+          <Route path="firstminute" element={<FirstMinute />} />
         </Route>
       </Routes>
     </BrowserRouter>

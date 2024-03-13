@@ -34,21 +34,25 @@ const Farmakológia = () => {
   };
 
   return (
-    <section className="section flex flex-col items-center justify-center h-screen w-full mt-14 relative overflow-hidden">
-      <form className="form flex flex-col items-center justify-center w-full">
+    <section className="section flex flex-col items-center justify-center w-full relative space-y-6 h-[65%] ">
+      <form className="form w-full flex justify-center fixed top-16 space-x-4">
         <input
-          className="input h-7 border-none outline-none mb-1 w-1/3 text-xl"
+          className="input w-60 p-2 rounded-md text-center text-slate-500 outline-none"
           type="text"
           placeholder="Search Med"
           value={searchingMed}
           onChange={(e) => setSearchingMed(e.target.value)}
         />
-        <button className="submit-btn" onClick={medsOnPage}>
+
+        <button
+          className="submit-btn w-20 bg-amber-700 rounded-md text-white "
+          onClick={medsOnPage}
+        >
           Submit
         </button>
       </form>
 
-      <div className="filtered-med h-1/3 overflow-y-scroll overflow-x-hidden w-full">
+      <div className="filtered-med w-3/4 overflow-y-scroll bg-white p-4 text-xs rounded-md space-y-4 h-full ring-4 ring-amber-700">
         {filteredMed.map((oneMed) => {
           const {
             id,
@@ -64,8 +68,8 @@ const Farmakológia = () => {
           } = oneMed;
 
           return (
-            <div className="printed-med text-3 " key={id}>
-              <h1 className="mt-4 mb-1 font-bold text-[20px]">{nazov}</h1>
+            <div className="printed-med space-y-2 text-slate-700 " key={id}>
+              <h1 className="text-center font-bold text-xl mb-3">{nazov}</h1>
               <p>{setFirstWordBold(skupina)}</p>
               <p>{setFirstWordBold(MU)}</p>
               <p>{setFirstWordBold(indikacie)}</p>
@@ -74,14 +78,17 @@ const Farmakológia = () => {
               <p>{setFirstWordBold(nastupAodoznenieUcinku)}</p>
               <p>{setFirstWordBold(NU)}</p>
               <p>{setFirstWordBold(KI)}</p>
-              <div className="div-selector w-2/3 mt-[30px]"></div>
+              <div className=""></div>
             </div>
           );
         })}
       </div>
 
       <div className="refresh-btn-div">
-        <button className="refresh-btn" onClick={() => setFilteredMed([])}>
+        <button
+          className="refresh-btn w-20 bg-amber-700 p-1 rounded-md text-white mt-3"
+          onClick={() => setFilteredMed([])}
+        >
           Refresh
         </button>
       </div>
