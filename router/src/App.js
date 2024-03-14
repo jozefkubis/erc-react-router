@@ -32,7 +32,7 @@ import FirstMinute from "./pages/erc/NLS/FirstMinute";
 import AfterFirstMinute from "./pages/erc/NLS/AfterFirstMinute";
 import After2FirstMinute from "./pages/erc/NLS/After2FirstMinute";
 import AfterFinalFirstMinute from "./pages/erc/NLS/AfterFinalFirstMinute";
-
+import Itemlist from "./pages/itemlist/ItemList";
 const App = () => {
   return (
     <BrowserRouter>
@@ -70,6 +70,7 @@ const App = () => {
           <Route path="afterfirstminute" element={<AfterFirstMinute />} />
           <Route path="after2firstminute" element={<After2FirstMinute />} />
           <Route path="afterfinalfirstminute" element={<AfterFinalFirstMinute />} />
+          <Route path="itemlist" element={<Itemlist/>} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -31,6 +31,15 @@ const Navbar = () => {
         >
           Farmakológia
         </NavLink>
+
+        <NavLink
+          to="/itemlist"
+          className={({ isActive }) =>
+            isActive ? "activeLink" : "nonactiveLink"
+          }
+        >
+          Zoznam materiálu
+        </NavLink>
       </nav>
     </header>
   );
