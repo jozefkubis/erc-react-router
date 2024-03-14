@@ -29,6 +29,9 @@ import PALSadrenalin from "./pages/erc/PALS/PALSadrenalin";
 import Farmakológia from "./pages/farmakologia/Farmakológia";
 import NLS from "./pages/erc/NLS/NLS";
 import FirstMinute from "./pages/erc/NLS/FirstMinute";
+import AfterFirstMinute from "./pages/erc/NLS/AfterFirstMinute";
+import After2FirstMinute from "./pages/erc/NLS/After2FirstMinute";
+import AfterFinalFirstMinute from "./pages/erc/NLS/AfterFinalFirstMinute";
 
 const App = () => {
   return (
@@ -64,6 +67,9 @@ const App = () => {
           <Route path="palsadrenalin" element={<PALSadrenalin />} />
           <Route path="nls" element={<NLS />} />
           <Route path="firstminute" element={<FirstMinute />} />
+          <Route path="afterfirstminute" element={<AfterFirstMinute />} />
+          <Route path="after2firstminute" element={<After2FirstMinute />} />
+          <Route path="afterfinalfirstminute" element={<AfterFinalFirstMinute />} />
         </Route>
       </Routes>
     </BrowserRouter>
