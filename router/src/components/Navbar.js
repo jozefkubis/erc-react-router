@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <header>
-      <nav className="fixed w-full flex justify-evenly top-0 p-3 bg-[#364663] text-white">
+      <nav className="fixed w-full flex justify-evenly top-0 p-3 bg-[#364663] text-white z-20">
         <NavLink
           to="/"
           className={({ isActive }) =>
