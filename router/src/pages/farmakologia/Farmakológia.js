@@ -45,7 +45,7 @@ const Farmakológia = () => {
         />
 
         <button
-          className="submit-btn w-20 bg-amber-700 rounded-md text-white "
+          className="submit-btn w-20 bg-amber-700 rounded-md text-white"
           onClick={medsOnPage}
         >
           Submit
