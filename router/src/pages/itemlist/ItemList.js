@@ -34,9 +34,9 @@ const Itemlist = () => {
 
   return (
     <section className="section">
-      <form className="form fixed top-16 w-full flex justify-center space-x-1 z-10">
+      <form className="form ">
         <input
-          className="searching-input w-60 p-2 rounded-md text-center text-slate-500 outline-none relative"
+          className="searching-input "
           onClick={() => {
             setFilteredItems([]);
             setSearchingItem("");
@@ -47,19 +47,19 @@ const Itemlist = () => {
           onChange={(e) => setSearchingItem(e.target.value)}
         />
         <input
-          className="deleteAll-btn w-20 bg-amber-700 rounded-md text-white"
+          className="deleteAll-btn "
           type="submit"
           value="DeleteAll"
           onClick={() => setPrintedItems([])}
         />
       </form>
 
-      <div className="filtered-items absolute flex flex-col items-center w-full top-[110px] space-y-1 overflow-x-hidden overflow-y-auto h-3/4">
+      <div className="filtered-items ">
         {filteredItems.map((oneItem, index) => {
           if (searchingItem) {
             return (
               <button
-                className="filtered-items-btn p-1 bg-slate-400 border-none w-[250px] rounded-md text-center text-slate-900 z-10"
+                className="filtered-items-btn"
                 onClick={itemsOnPage}
                 key={index}
               >
