@@ -33,6 +33,13 @@ import AfterFirstMinute from "./pages/erc/NLS/AfterFirstMinute";
 import After2FirstMinute from "./pages/erc/NLS/After2FirstMinute";
 import AfterFinalFirstMinute from "./pages/erc/NLS/AfterFinalFirstMinute";
 import Itemlist from "./pages/itemlist/ItemList";
+import TraumatickyPacient from "./pages/erc/traumaKPR/TraumatickyPacient";
+import ALS from "./pages/erc/traumaKPR/ALS";
+import TraumaPostup from "./pages/erc/traumaKPR/TraumaPostup";
+import ROSC from "./pages/erc/traumaKPR/ROSC";
+import EndCPR from "./pages/erc/traumaKPR/EndCPR";
+import Transport from "./pages/erc/traumaKPR/Transport";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -69,8 +76,17 @@ const App = () => {
           <Route path="firstminute" element={<FirstMinute />} />
           <Route path="afterfirstminute" element={<AfterFirstMinute />} />
           <Route path="after2firstminute" element={<After2FirstMinute />} />
-          <Route path="afterfinalfirstminute" element={<AfterFinalFirstMinute />} />
-          <Route path="itemlist" element={<Itemlist/>} />
+          <Route
+            path="afterfinalfirstminute"
+            element={<AfterFinalFirstMinute />}
+          />
+          <Route path="itemlist" element={<Itemlist />} />
+          <Route path="traumatickypacient" element={<TraumatickyPacient />} />
+          <Route path="als" element={<ALS />} />
+          <Route path="traumapostup" element={<TraumaPostup />} />
+          <Route path="rosc" element={<ROSC />} />
+          <Route path="endcpr" element={<EndCPR />} />
+          <Route path="transport" element={<Transport />} />
         </Route>
       </Routes>
     </BrowserRouter>
