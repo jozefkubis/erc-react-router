@@ -41,6 +41,13 @@ import EndCPR from "./pages/erc/traumaKPR/EndCPR";
 import Transport from "./pages/erc/traumaKPR/Transport";
 import PPPC from "./pages/erc/traumaKPR/PPPC";
 import ResTorak from "./pages/erc/traumaKPR/ResTorak";
+import TTaVF from "./pages/erc/nahodna hypotermia/TTaVF";
+import PoruchVed from "./pages/erc/nahodna hypotermia/PoruchVed";
+import TransportDoNem from "./pages/erc/nahodna hypotermia/TransportDoNem";
+import KardInstabMimoNemocnice from "./pages/erc/nahodna hypotermia/KardInstabMimoNemocnice";
+import Transport2 from "./pages/erc/nahodna hypotermia/Transport2";
+import TransportECLS from "./pages/erc/nahodna hypotermia/TransportECLS";
+import HT2aleboHT3 from "./pages/erc/nahodna hypotermia/HT2aleboHT3";
 
 const App = () => {
   return (
@@ -91,6 +98,13 @@ const App = () => {
           <Route path="transport" element={<Transport />} />
           <Route path="pppc" element={<PPPC />} />
           <Route path="restorak" element={<ResTorak />} />
+          <Route path="ttavf" element={<TTaVF />} />
+          <Route path="poruchved" element={<PoruchVed />} />
+          <Route path="transportdonem" element={<TransportDoNem />} />
+          <Route path="kardinstabmimonemocnice" element={<KardInstabMimoNemocnice />} />
+          <Route path="transport2" element={<Transport2 />} />
+          <Route path="transportecls" element={<TransportECLS />} />
+          <Route path="ht2aleboht3" element={<HT2aleboHT3 />} />
         </Route>
       </Routes>
     </BrowserRouter>

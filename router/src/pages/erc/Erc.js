@@ -69,6 +69,17 @@ const Erc = () => {
         </button>
       </NavLink>
 
+      <NavLink
+        to="/ttavf"
+        className={({ isActive }) =>
+          isActive ? "activeLink" : "nonactiveLink"
+        }
+      >
+        <button className="button bg-blue-700 p-1 rounded-md text-white ring ring-red-500 w-52">
+          Náhodná Hypotermia
+        </button>
+      </NavLink>
+
       <br />
       <Outlet />
     </div>
