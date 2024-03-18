@@ -39,6 +39,8 @@ import TraumaPostup from "./pages/erc/traumaKPR/TraumaPostup";
 import ROSC from "./pages/erc/traumaKPR/ROSC";
 import EndCPR from "./pages/erc/traumaKPR/EndCPR";
 import Transport from "./pages/erc/traumaKPR/Transport";
+import PPPC from "./pages/erc/traumaKPR/PPPC";
+import ResTorak from "./pages/erc/traumaKPR/ResTorak";
 
 const App = () => {
   return (
@@ -87,6 +89,8 @@ const App = () => {
           <Route path="rosc" element={<ROSC />} />
           <Route path="endcpr" element={<EndCPR />} />
           <Route path="transport" element={<Transport />} />
+          <Route path="pppc" element={<PPPC />} />
+          <Route path="restorak" element={<ResTorak />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -21,13 +21,14 @@ const TraumaPostup = () => {
               oxygenáciu
             </li>
             <li>3. Bilaterálna dekompresia hrudníka (torakostómie)</li>
-            <div className=" rounded-md ring ring-white">
-              <li>4. Uvoľnite tamponádu (penetrujúce poranenie hrudníka)</li>
-              <li>
-                5.Kontrola proximálnej cievy (REBOA/manuálna kompresia aorty
-              </li>
-            </div>
-
+            <NavLink to="/pppc">
+              <div className=" rounded-md ring ring-white">
+                <li>4. Uvoľnite tamponádu (penetrujúce poranenie hrudníka)</li>
+                <li>
+                  5.Kontrola proximálnej cievy (REBOA/manuálna kompresia aorty
+                </li>
+              </div>
+            </NavLink>
             <li>6. Fixácia panvy</li>
             <li>7.Krvné produkty / masívny transfúzny protokol</li>
           </ol>
