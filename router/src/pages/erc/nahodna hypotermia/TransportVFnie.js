@@ -1,12 +1,15 @@
-const ALS = () => {
+const TransportVFnie = () => {
   const goBack = () => {
     window.history.back();
   };
 
   return (
     <div className="div flex flex-col space-y-4 justify-center items-center">
-      <button className="button bg-white rounded-md text-blue-700 ring ring-blue-700 text-6xl p-8">
-        ALS
+      <button className="button bg-white rounded-md text-blue-700 ring ring-blue-700 text-2xl p-8">
+        Transport do najbližšej <br />
+        vhodnej nemocnice <br />
+        alebo manažment <br />
+        podľa supervízora
       </button>
 
       <button
@@ -19,4 +22,4 @@ const ALS = () => {
   );
 };
 
-export default ALS;
+export default TransportVFnie;

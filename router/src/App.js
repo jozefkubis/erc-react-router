@@ -48,6 +48,13 @@ import KardInstabMimoNemocnice from "./pages/erc/nahodna hypotermia/KardInstabMi
 import Transport2 from "./pages/erc/nahodna hypotermia/Transport2";
 import TransportECLS from "./pages/erc/nahodna hypotermia/TransportECLS";
 import HT2aleboHT3 from "./pages/erc/nahodna hypotermia/HT2aleboHT3";
+import VFnie from "./pages/erc/nahodna hypotermia/VFnie";
+import AkekolvekAno from "./pages/erc/nahodna hypotermia/AkekolvekAno";
+import VsetkyNie from "./pages/erc/nahodna hypotermia/VsetkyNie";
+import TransportVFnie from "./pages/erc/nahodna hypotermia/TransportVFnie";
+import PrognostikaciaNaBenefit from "./pages/erc/nahodna hypotermia/PrognostikaciaNaBenefit";
+import UkoncenieKPR from "./pages/erc/nahodna hypotermia/UkoncenieKPR";
+import MultiorgZlyhanie from "./pages/erc/nahodna hypotermia/MultiorgZlyhanie";
 
 const App = () => {
   return (
@@ -105,6 +112,13 @@ const App = () => {
           <Route path="transport2" element={<Transport2 />} />
           <Route path="transportecls" element={<TransportECLS />} />
           <Route path="ht2aleboht3" element={<HT2aleboHT3 />} />
+          <Route path="vfnie" element={<VFnie />} />
+          <Route path="akekolvekano" element={<AkekolvekAno />} />
+          <Route path="vsetkynie" element={<VsetkyNie />} />
+          <Route path="transportvfnie" element={<TransportVFnie />} />
+          <Route path="prognostikacianabenefit" element={<PrognostikaciaNaBenefit />} />
+          <Route path="ukonceniekpr" element={<UkoncenieKPR />} />
+          <Route path="multiorgzlyhanie" element={<MultiorgZlyhanie />} />
         </Route>
       </Routes>
     </BrowserRouter>

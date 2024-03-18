@@ -32,7 +32,7 @@ const Itemlist = () => {
   // ..................................................................
 
   return (
-    <section className="section w-full overflow-hidden flex flex-col items-center justify-center relative">
+    <section className="section w-full overflow-hidden flex flex-col items-center justify-center relative space-y-2">
       <form className="form p-3 flex items-center flex-col w-full space-y-2 fixed top-14">
         <input
           className="searching-input w-60 p-2 rounded-md text-center text-slate-500 outline-none"
@@ -53,7 +53,7 @@ const Itemlist = () => {
         />
       </form>
 
-      <div className="filtered-items flex flex-col overflow-x-hidden overflow-y-auto touch-pan-y w-1/2 max-h-[58%] cursor-pointer fixed top-[155px] space-y-[1px] z-10">
+      <div className="filtered-items flex flex-col overflow-x-hidden overflow-y-auto touch-pan-y w-1/2 h-screen cursor-pointer fixed top-[155px] space-y-[1px] z-10">
         {filteredItems.map((oneItem, index) => {
           if (searchingItem) {
             return (
@@ -71,7 +71,7 @@ const Itemlist = () => {
         })}
       </div>
 
-      <div className="printed-items h-[58%] overflow-y-scroll overflow-x-hidden w-full fixed top-[155px] px-10">
+      <div className="printed-items h-[58%] overflow-y-auto overflow-x-hidden w-3/4 fixed top-[155px] px-10 bg-white ring ring-amber-700 rounded-md">
         {printedItems.map((onePrintedItem, index) => {
           return (
             <div className="printed-items-div flex justify-between items-center p-2 font-bold w-full" key={index}>

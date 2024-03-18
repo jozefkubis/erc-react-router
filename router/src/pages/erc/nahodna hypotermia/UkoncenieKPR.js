@@ -1,12 +1,13 @@
-const ALS = () => {
+const UkoncenieKPR = () => {
   const goBack = () => {
     window.history.back();
   };
 
   return (
     <div className="div flex flex-col space-y-4 justify-center items-center">
-      <button className="button bg-white rounded-md text-blue-700 ring ring-blue-700 text-6xl p-8">
-        ALS
+      <button className="button bg-white rounded-md text-blue-700 ring ring-blue-700 text-2xl p-8">
+        Zvážte <br />
+        ukončenie KPR
       </button>
 
       <button
@@ -19,4 +20,4 @@ const ALS = () => {
   );
 };
 
-export default ALS;
+export default UkoncenieKPR;

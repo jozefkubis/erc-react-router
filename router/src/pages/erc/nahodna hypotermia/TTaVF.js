@@ -24,7 +24,7 @@ const TTaVF = () => {
           </button>
         </NavLink>
 
-        <NavLink to="/">
+        <NavLink to="/vfnie">
           <button className="ano-nie-button bg-blue-700 p-1 rounded-md text-white ring ring-red-500 w-20 my-4">
             Nie
           </button>

@@ -52,7 +52,7 @@ const Farmakológia = () => {
         </button>
       </form>
 
-      <div className="filtered-med w-3/4 overflow-y-scroll bg-white p-4 text-xs rounded-md space-y-4 h-full ring-4 ring-amber-700">
+      <div className="filtered-med w-3/4 overflow-y-auto bg-white p-4 text-xs rounded-md space-y-4 h-full ring-4 ring-amber-700">
         {filteredMed.map((oneMed) => {
           const {
             id,
