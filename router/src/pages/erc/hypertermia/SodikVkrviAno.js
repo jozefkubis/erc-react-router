@@ -7,7 +7,7 @@ const SodikVkrviAno = () => {
 
   return (
     <div className="div flex flex-col space-y-4 justify-center items-center">
-      <NavLink to="/">
+      <NavLink to="/hyponatriemia">
         <button className="button bg-blue-700 px-2 py-2 rounded-md text-white ring ring-red-500 text-center w-64">
           Pri poruche vedomia začnite podávať <br />
           3% NaCl IV 100ml bolus v 10 min <br />

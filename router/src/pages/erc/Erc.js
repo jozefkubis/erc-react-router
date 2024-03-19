@@ -81,7 +81,7 @@ const Erc = () => {
       </NavLink>
 
       <NavLink
-        to="/vyzadujekpr"
+        to="/casjekluc"
         className={({ isActive }) =>
           isActive ? "activeLink" : "nonactiveLink"
         }

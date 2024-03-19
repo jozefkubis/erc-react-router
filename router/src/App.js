@@ -67,6 +67,11 @@ import Prepustenie from "./pages/erc/hypertermia/Prepustenie";
 import Hypoglykemia from "./pages/erc/hypertermia/Hypoglykemia";
 import SodikVkrviAno from "./pages/erc/hypertermia/SodikVkrviAno";
 import DehydratovanyAno from "./pages/erc/hypertermia/DehydratovanyAno";
+import Hyponatriemia from "./pages/erc/hypertermia/Hyponatriemia";
+import ZastavitChladenie from "./pages/erc/hypertermia/ZastavitChladenie";
+import Monitorovanie from "./pages/erc/hypertermia/Monitorovanie";
+import CasJeKluc from "./pages/erc/hypertermia/CasJeKluc";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -148,6 +153,10 @@ const App = () => {
           <Route path="hypoglykemia" element={<Hypoglykemia />} />
           <Route path="sodikvkrviano" element={<SodikVkrviAno />} />
           <Route path="dehydratovanyano" element={<DehydratovanyAno />} />
+          <Route path="hyponatriemia" element={<Hyponatriemia />} />
+          <Route path="zastavitchladenie" element={<ZastavitChladenie />} />
+          <Route path="monitorovanie" element={<Monitorovanie />} />
+          <Route path="casjekluc" element={<CasJeKluc />} />
         </Route>
       </Routes>
     </BrowserRouter>

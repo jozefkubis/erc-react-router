@@ -7,10 +7,18 @@ const KPRnie = () => {
 
   return (
     <div className="div flex flex-col space-y-4 justify-center items-center">
-      <button className="button bg-blue-700 px-2 py-2 rounded-md text-white ring ring-red-500 text-center w-48">
-        Teplota telesného <br />
-        jadra viac ako 40,5 ºC
-      </button>
+      <div className="flex space-x-4">
+        <button className="button bg-white rounded-md text-blue-700 ring ring-blue-700 text-xs p-2">
+          Použite <br />
+          teplotnú <br />
+          sondu
+        </button>
+
+        <button className="button bg-blue-700 px-2 py-2 rounded-md text-white ring ring-red-500 text-center w-48">
+          Teplota telesného <br />
+          jadra viac ako 40,5 ºC
+        </button>
+      </div>
 
       <div className="anoNie flex space-x-4">
         <NavLink to="/studenavoda">

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const DehydratovanyAno = () => {
+const Hyponatriemia = () => {
   const goBack = () => {
     window.history.back();
   };
@@ -8,11 +8,9 @@ const DehydratovanyAno = () => {
   return (
     <div className="div flex flex-col space-y-4 justify-center items-center">
       <NavLink to="/inesympt">
-        <button className="button bg-blue-700 px-2 py-2 rounded-md text-white ring ring-red-500 text-center w-64">
-          Pri poruche vedomia podajte IV <br />
-          fyziologický roztok alebo Ringer <br />
-          laktát. Pri normálnom stave vedomia <br />
-          poskytnite orálnu rehydratáciu a sodík
+        <button className="button bg-blue-700 px-2 py-2 rounded-md text-white ring ring-red-500 text-center w-48">
+          Algoritmus <br />
+          hyponatriémie
         </button>
       </NavLink>
 
@@ -26,4 +24,4 @@ const DehydratovanyAno = () => {
   );
 };
 
-export default DehydratovanyAno;
+export default Hyponatriemia;

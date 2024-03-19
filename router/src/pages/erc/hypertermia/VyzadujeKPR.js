@@ -21,7 +21,7 @@ const VyzadujeKPR = () => {
         </NavLink>
       </div>
 
-      <NavLink to="/erc">
+      <NavLink to="/casjekluc">
         <button className="back-button w-20 bg-amber-700 p-1 rounded-md text-white">
           Spet
         </button>
