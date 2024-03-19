@@ -2,94 +2,94 @@ import { NavLink, Outlet } from "react-router-dom";
 
 const Erc = () => {
   return (
-    <div className="h-screen flex flex-col justify-center items-center space-y-4 ">
-      <NavLink
-        to="/tachykardia"
-        className={({ isActive }) =>
-          isActive ? "activeLink" : "nonactiveLink"
-        }
-      >
-        <button className="button bg-blue-700 p-1 rounded-md text-white ring ring-red-500 w-52">
+    <div className="grid grid-cols-2 place-content-center place-items-center gap-2  text-center w-2/3 m-auto">
+      <div className="bg-blue-700 w-full h-full flex items-center justify-center text-white rounded-lg p-4">
+        <NavLink
+          to="/tachykardia"
+          className={({ isActive }) =>
+            isActive ? "activeLink" : "nonactiveLink"
+          }
+        >
           Tachykardia
-        </button>
-      </NavLink>
+        </NavLink>
+      </div>
 
-      <NavLink
-        to="/bradykardia"
-        className={({ isActive }) =>
-          isActive ? "activeLink" : "nonactiveLink"
-        }
-      >
-        <button className="button bg-blue-700 p-1 rounded-md text-white ring ring-red-500 w-52">
+      <div className="bg-blue-700 w-full h-full flex items-center justify-center text-white rounded-lg p-4">
+        <NavLink
+          to="/bradykardia"
+          className={({ isActive }) =>
+            isActive ? "activeLink" : "nonactiveLink"
+          }
+        >
           Bradykardia
-        </button>
-      </NavLink>
+        </NavLink>
+      </div>
 
-      <NavLink
-        to="/pbls"
-        className={({ isActive }) =>
-          isActive ? "activeLink" : "nonactiveLink"
-        }
-      >
-        <button className="button bg-blue-700 p-1 rounded-md text-white ring ring-red-500 w-52">
+      <div className="bg-blue-700 w-full h-full flex items-center justify-center text-white rounded-lg p-4">
+        <NavLink
+          to="/pbls"
+          className={({ isActive }) =>
+            isActive ? "activeLink" : "nonactiveLink"
+          }
+        >
           Pediatrická Základná Resuscitácia
-        </button>
-      </NavLink>
+        </NavLink>
+      </div>
 
-      <NavLink
-        to="/pals"
-        className={({ isActive }) =>
-          isActive ? "activeLink" : "nonactiveLink"
-        }
-      >
-        <button className="button bg-blue-700 p-1 rounded-md text-white ring ring-red-500 w-52">
+      <div className="bg-blue-700 w-full h-full flex items-center justify-center text-white rounded-lg p-4">
+        <NavLink
+          to="/pals"
+          className={({ isActive }) =>
+            isActive ? "activeLink" : "nonactiveLink"
+          }
+        >
           Pediatrická Rozšírená Resuscitácia
-        </button>
-      </NavLink>
+        </NavLink>
+      </div>
 
-      <NavLink
-        to="/nls"
-        className={({ isActive }) =>
-          isActive ? "activeLink" : "nonactiveLink"
-        }
-      >
-        <button className="button bg-blue-700 p-1 rounded-md text-white ring ring-red-500 w-52">
+      <div className="bg-blue-700 w-full h-full flex items-center justify-center text-white rounded-lg p-4">
+        <NavLink
+          to="/nls"
+          className={({ isActive }) =>
+            isActive ? "activeLink" : "nonactiveLink"
+          }
+        >
           NewBorn Life Support
-        </button>
-      </NavLink>
+        </NavLink>
+      </div>
 
-      <NavLink
-        to="/traumatickypacient"
-        className={({ isActive }) =>
-          isActive ? "activeLink" : "nonactiveLink"
-        }
-      >
-        <button className="button bg-blue-700 p-1 rounded-md text-white ring ring-red-500 w-52">
+      <div className="bg-blue-700 w-full h-full flex items-center justify-center text-white rounded-lg p-4">
+        <NavLink
+          to="/traumatickypacient"
+          className={({ isActive }) =>
+            isActive ? "activeLink" : "nonactiveLink"
+          }
+        >
           Traumatický pacient so zastavením obehu / rizikom zastavenia obehu
-        </button>
-      </NavLink>
+        </NavLink>
+      </div>
 
-      <NavLink
-        to="/ttavf"
-        className={({ isActive }) =>
-          isActive ? "activeLink" : "nonactiveLink"
-        }
-      >
-        <button className="button bg-blue-700 p-1 rounded-md text-white ring ring-red-500 w-52">
+      <div className="bg-blue-700 w-full h-full flex items-center justify-center text-white rounded-lg p-4">
+        <NavLink
+          to="/ttavf"
+          className={({ isActive }) =>
+            isActive ? "activeLink" : "nonactiveLink"
+          }
+        >
           Náhodná Hypotermia
-        </button>
-      </NavLink>
+        </NavLink>
+      </div>
 
-      <NavLink
-        to="/casjekluc"
-        className={({ isActive }) =>
-          isActive ? "activeLink" : "nonactiveLink"
-        }
-      >
-        <button className="button bg-blue-700 p-1 rounded-md text-white ring ring-red-500 w-52">
+      <div className="bg-blue-700 w-full h-full flex items-center justify-center text-white rounded-lg p-4">
+        <NavLink
+          to="/casjekluc"
+          className={({ isActive }) =>
+            isActive ? "activeLink" : "nonactiveLink"
+          }
+        >
           Hypertermia
-        </button>
-      </NavLink>
+        </NavLink>
+      </div>
 
       <br />
       <Outlet />
