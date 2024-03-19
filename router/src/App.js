@@ -55,7 +55,18 @@ import TransportVFnie from "./pages/erc/nahodna hypotermia/TransportVFnie";
 import PrognostikaciaNaBenefit from "./pages/erc/nahodna hypotermia/PrognostikaciaNaBenefit";
 import UkoncenieKPR from "./pages/erc/nahodna hypotermia/UkoncenieKPR";
 import MultiorgZlyhanie from "./pages/erc/nahodna hypotermia/MultiorgZlyhanie";
-
+import VyzadujeKPR from "./pages/erc/hypertermia/VyzadujeKPR";
+import KPRano from "./pages/erc/hypertermia/KPRano";
+import KPRnie from "./pages/erc/hypertermia/KPRnie";
+import Dezorientovany from "./pages/erc/hypertermia/Dezorientovany";
+import StudenaVoda from "./pages/erc/hypertermia/StudenaVoda";
+import SodikVkrvi from "./pages/erc/hypertermia/SodikVkrvi";
+import Dehydratovany from "./pages/erc/hypertermia/Dehydratovany";
+import IneSympt from "./pages/erc/hypertermia/IneSympt";
+import Prepustenie from "./pages/erc/hypertermia/Prepustenie";
+import Hypoglykemia from "./pages/erc/hypertermia/Hypoglykemia";
+import SodikVkrviAno from "./pages/erc/hypertermia/SodikVkrviAno";
+import DehydratovanyAno from "./pages/erc/hypertermia/DehydratovanyAno";
 const App = () => {
   return (
     <BrowserRouter>
@@ -108,7 +119,10 @@ const App = () => {
           <Route path="ttavf" element={<TTaVF />} />
           <Route path="poruchved" element={<PoruchVed />} />
           <Route path="transportdonem" element={<TransportDoNem />} />
-          <Route path="kardinstabmimonemocnice" element={<KardInstabMimoNemocnice />} />
+          <Route
+            path="kardinstabmimonemocnice"
+            element={<KardInstabMimoNemocnice />}
+          />
           <Route path="transport2" element={<Transport2 />} />
           <Route path="transportecls" element={<TransportECLS />} />
           <Route path="ht2aleboht3" element={<HT2aleboHT3 />} />
@@ -116,9 +130,24 @@ const App = () => {
           <Route path="akekolvekano" element={<AkekolvekAno />} />
           <Route path="vsetkynie" element={<VsetkyNie />} />
           <Route path="transportvfnie" element={<TransportVFnie />} />
-          <Route path="prognostikacianabenefit" element={<PrognostikaciaNaBenefit />} />
+          <Route
+            path="prognostikacianabenefit"
+            element={<PrognostikaciaNaBenefit />}
+          />
           <Route path="ukonceniekpr" element={<UkoncenieKPR />} />
           <Route path="multiorgzlyhanie" element={<MultiorgZlyhanie />} />
+          <Route path="vyzadujekpr" element={<VyzadujeKPR />} />
+          <Route path="kprano" element={<KPRano />} />
+          <Route path="kprnie" element={<KPRnie />} />
+          <Route path="dezorientovany" element={<Dezorientovany />} />
+          <Route path="studenavoda" element={<StudenaVoda />} />
+          <Route path="sodikvkrvi" element={<SodikVkrvi />} />
+          <Route path="dehydratovany" element={<Dehydratovany />} />
+          <Route path="inesympt" element={<IneSympt />} />
+          <Route path="prepustenie" element={<Prepustenie />} />
+          <Route path="hypoglykemia" element={<Hypoglykemia />} />
+          <Route path="sodikvkrviano" element={<SodikVkrviAno />} />
+          <Route path="dehydratovanyano" element={<DehydratovanyAno />} />
         </Route>
       </Routes>
     </BrowserRouter>
